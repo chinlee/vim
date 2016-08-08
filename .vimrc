@@ -33,3 +33,20 @@ nnoremap <Up> :echomsg "use k"<cr>
 nnoremap <Down> :echomsg "use j"<cr>
 nnoremap <Left> :echomsg "use h"<cr>
 nnoremap <Right> :echomsg "use l"<cr>
+
+" Enable 256 colors in VIM
+set term=screen-256color
+
+" give us nice EOL (end of line) characters
+set list
+set listchars=tab:▸\ ,eol:¬
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" " when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" " On pressing tab, insert 4 spaces
+set expandtab
+
+set backspace=indent,eol,start
